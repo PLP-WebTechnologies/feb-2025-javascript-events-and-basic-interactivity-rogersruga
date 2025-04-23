@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Game section -->
+    <div class="game-container">
+        <h1>Welcome to the Interactive Game!</h1>
+        <button id="gameButton">Click me to start!</button>
+        <div id="scoreDisplay">Score: 0</div>
+
+        <!-- Image Gallery with Captions -->
+        <div class="image-gallery">
+            <figure>
+                <img src="https://th.bing.com/th/id/R.5c186e9a038a8544743196355bc8dccd?rik=Hl%2bP1vkWjGNh4w&pid=ImgRaw&r=0" alt="Image 1" class="gallery-image">
+                <figcaption>Spongebob</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.iOl-WazdYinx6av7Kng5SgHaHa?rs=1&pid=ImgDetMain" alt="Image 2" class="gallery-image">
+                <figcaption>Mr. Krabs</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tse1.mm.bing.net/th/id/OIP.2iJxDeRP3HT9SjJeUnc1twAAAA?rs=1&pid=ImgDetMain" alt="Image 3" class="gallery-image">
+                <figcaption>Patrick</figcaption>
+            </figure>
+        </div>
+<br>
+<br>
+        <h2>Fun Facts!</h2>
+        <p>Click on the tabs below to learn fun facts about your favorite characters!</p>
+
+        <div class="tabs-container">
+            <button class="tab" data-tab="1">Spongebob</button>
+            <button class="tab" data-tab="2">Mr. Krabs</button>
+            <button class="tab" data-tab="3">Patrick</button>
+
+            <div class="tab-content" id="tab1">Spongebob's porous nature allows him to absorb and expel vast amounts of water, sometimes to comedic effect.</div>
+            <div class="tab-content" id="tab2">Despite his penny-pinching ways, Mr. Krabs has a soft spot for his daughter Pearl and a secret love for money.</div>
+            <div class="tab-content" id="tab3">Patrick Star, despite his apparent lack of intelligence, occasionally displays surprising moments of profound wisdom or accidental problem-solving.</div>
+        </div>
+    </div>
+
+    <!-- Form section -->
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Submit</button>
+            <div id="realTimeFeedback"></div>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>

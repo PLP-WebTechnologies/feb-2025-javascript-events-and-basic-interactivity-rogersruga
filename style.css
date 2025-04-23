@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.game-container {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d1d1d1;
+}
+
+#scoreDisplay {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Flexbox for horizontal layout */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px; /* Adds space between images */
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-image {
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.gallery-image:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.tabs-container {
+    margin-top: 30px;
+}
+
+.tab {
+    margin: 5px;
+    padding: 10px;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #d1e7fd;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.form-container {
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+#realTimeFeedback {
+    font-size: 12px;
+    color: red;
+}
